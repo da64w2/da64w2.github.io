@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+      background-color: #0099cc;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+    }
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 900px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.carousel-indicators img{
+            width: 25px;
+            display: block;
+        }
+        .carousel-indicators button{
+            width: max-content!important;
+        }
+        .carousel-indicators{
+            position: unset;
+        }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Krystian Lee Darelle P. Serapin</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+        <a href="about me.html" style="text-decoration: none;"><li>About Me</li></a>
+        <a href="1st sem 1st year.html" style="text-decoration: none;"><li>Subject Taken</li></a>
+        <a href="enrolled.html" style="text-decoration: none;"><li>Enrolled</li></a>
+        <a href="contact me.html" style="text-decoration: none;"><li>Contact Me</li></a>
+        <a href="my favourites.html" style="text-decoration: none;"><li>My Favourites</li></a>
+        <a href="gallery.html" style="text-decoration: none;"><li>Gallery</li></a>
+    </ul>
+  </div>
+<div class="col-8 col-s-9">
+    <div class="carousel slide" 
+      id="carouselDemo"
+      data-bs-wrap="true" 
+      data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="1.jpg" class="w-100">
+            <div class="carousel-caption">
+            </div>
+        </div>
+
+        <div class="carousel-item " 
+        data-bs-interval="2000">
+            <img src="2.jpg" class="w-100">
+            <div class="carousel-caption">
+            </div>
+        </div>
+
+        <div class="carousel-item ">
+            <img src="3.jpg" class="w-100">
+            <div class="carousel-caption">
+            </div>
+        </div>
+
+        <div class="carousel-item ">
+            <img src="4.jpg" class="w-100">
+            <div class="carousel-caption">
+            </div>
+        </div>
+
+        <div class="carousel-item ">
+            <img src="5.jpg" class="w-100">
+            <div class="carousel-caption">
+            </div>
+        </div>
+
+        <div class="carousel-item ">
+            <img src="6.jpg" class="w-100">
+            <div class="carousel-caption">
+            </div>
+        </div>
+
+        <div class="carousel-item ">
+            <img src="7.jpg" class="w-100">
+            <div class="carousel-caption">
+            </div>
+        </div>
+
+        <div class="carousel-item ">
+            <img src="8.jpg" class="w-100">
+            <div class="carousel-caption">
+            </div>
+        </div>
+
+        <div class="carousel-item ">
+            <img src="9.jpg" class="w-100">
+            <div class="carousel-caption">
+            </div>
+        </div>
+
+        <div class="carousel-item ">
+            <img src="10.jpg" class="w-100">
+            <div class="carousel-caption">
+            </div>
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" 
+    type="button"
+    data-bs-target="#carouselDemo" 
+    data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselDemo"
+    data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    </button>
+
+    <div class="carousel-indicators">
+        <button type="button" class="active"
+            data-bs-target="#carouselDemo"
+            data-bs-slide-to="0">
+            <img src="1.jpg" />
+        </button>
+
+        <button type="button" 
+        data-bs-target="#carouselDemo"
+        data-bs-slide-to="1">
+            <img src="2.jpg" />
+        </button>
+
+        <button type="button"
+        data-bs-target="#carouselDemo"
+        data-bs-slide-to="2">
+            <img src="3.jpg" />
+        </button>
+
+        <button type="button" 
+        data-bs-target="#carouselDemo"
+        data-bs-slide-to="3">
+            <img src="4.jpg" />
+        </button>
+
+        <button type="button"
+        data-bs-target="#carouselDemo"
+        data-bs-slide-to="4">
+            <img src="5.jpg" />
+        </button>
+
+        <button type="button" 
+        data-bs-target="#carouselDemo"
+        data-bs-slide-to="5">
+            <img src="6.jpg" />
+        </button>
+
+        <button type="button"
+        data-bs-target="#carouselDemo"
+        data-bs-slide-to="6">
+            <img src="7.jpg" />
+        </button>
+
+        <button type="button" 
+        data-bs-target="#carouselDemo"
+        data-bs-slide-to="7">
+            <img src="8.jpg" />
+        </button>
+
+        <button type="button"
+        data-bs-target="#carouselDemo"
+        data-bs-slide-to="8">
+            <img src="9.jpg" />
+        </button>
+
+        <button type="button" 
+        data-bs-target="#carouselDemo"
+        data-bs-slide-to="9">
+            <img src="10.jpg" />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    
+        <div class="footer">
+  <p>Ⓒ 2023 -2024 ITP4 | All Right Served</p>
+</div>
+
+</body>
+</html>
+
+
